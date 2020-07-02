@@ -16,7 +16,9 @@ use std::collections::HashSet;
 /// [`Game::Input`]: ../trait.Game.html#associatedtype.Input
 #[derive(Debug, Clone)]
 pub struct Keyboard {
+	/// pressed keys
     pub pressed_keys: HashSet<KeyCode>,
+    /// released keys
     pub released_keys: HashSet<KeyCode>,
 }
 
