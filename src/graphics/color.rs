@@ -73,7 +73,7 @@ impl Color {
     /// Creates a new [`Color`] from its RGB components in the [0, 255] range.
     ///
     /// [`Color`]: struct.Color.html
-    pub fn from_rgb(r: u8, g: u8, b: u8) -> Color {
+    pub const fn from_rgb(r: u8, g: u8, b: u8) -> Color {
         Color {
             r: r as f32 / 255.0,
             g: g as f32 / 255.0,

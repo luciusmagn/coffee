@@ -70,6 +70,7 @@
 //! [`Game`]: trait.Game.html
 //! [`Game::run`]: trait.Game.html#method.run
 //! [`WindowSettings`]: graphics/struct.WindowSettings.html
+#![feature(const_fn)]
 #![deny(missing_docs)]
 #![deny(missing_debug_implementations)]
 #![deny(unused_results)]
