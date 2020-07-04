@@ -58,7 +58,7 @@ impl Color {
     /// Creates a new [`Color`] from components in the [0, 1.0] range.
     ///
     /// [`Color`]: struct.Color.html
-    pub fn new(r: f32, g: f32, b: f32, a: f32) -> Color {
+    pub const fn new(r: f32, g: f32, b: f32, a: f32) -> Color {
         debug_assert!(r >= 0.0, "Red component is < 0.0");
         debug_assert!(r <= 1.0, "Red component is > 1.0");
         debug_assert!(g >= 0.0, "Green component is < 0.0");
@@ -85,7 +85,7 @@ impl Color {
     /// Creates a new [`Color`] from its RGB representation (0xRRGGBB).
     ///
     /// [`Color`]: struct.Color.html
-    pub fn from_rgb_u32(color: u32) -> Color {
+    pub const fn from_rgb_u32(color: u32) -> Color {
         debug_assert!(
             color <= 0xFFFFFF,
             "Color contains value higher than 0xFFFFFF"
